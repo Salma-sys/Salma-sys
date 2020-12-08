@@ -1,0 +1,104 @@
+
+
+
+.movie img{
+
+    max-width: 100%;
+    border-radius: 5px;
+
+    
+    
+    
+}
+.movie {
+    position: relative;
+    
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: rgb(1px,0, 1px);
+    background-color:  rgb(85, 79, 116);
+    margin: 2rem;
+    overflow: hidden;
+    
+
+}
+body {
+    background-color: rgb(41, 36, 59);
+  
+}
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+   color: white;
+   padding: 1rem ;
+   letter-spacing: 1px;
+  
+}
+
+.movie-info h3 {
+    margin: 0;
+    
+}
+.movie-info span {
+    
+    background-color: rgb(41, 36, 59);
+    padding: 0.25rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie-info span.green {
+    color: green;
+}
+.movie-info span.orange {
+    color: rgb(219, 127, 41);
+}
+.movie-info span.red {
+    color: rgb(197, 35, 23);
+}
+header {
+   display: flex;
+   width: 100%;
+   justify-content: flex-start;
+   background-color: rgb(85, 79, 116);
+   padding: 1.25rem;
+  margin-top: 0;
+}
+.search {
+    background-color:  rgb(102, 95, 138);
+   
+    border-radius: 5px;
+   height: 1rem;
+}
+.search:hover {
+    background-color:  rgb(40, 37, 54);
+}
+
+header input::placeholder {
+    color:rgb(40, 37, 54);;
+   
+    font-weight: bold;
+}
+.overview {
+    position: absolute;
+   max-height: 100%;
+   overflow: auto;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   padding: 2rem;
+   background-color: white;
+   
+   transform: translateY(100%);
+   transition: 0.3s ease-out;
+
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
